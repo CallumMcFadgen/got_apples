@@ -1,0 +1,69 @@
+// HEADER STYLING ///////////////////////////////////////////////////
+[header] {
+    --background: #2A6F03
+}
+
+[header_logo] {
+    font-size: 250%;
+    font-weight: bold;
+    --color: white;
+}
+
+// NAV BAR /////////////////////////////////////////////////////////
+[nav] {
+    --background: #64676C
+}
+
+[nav_button] {
+    --color: white;
+   }
+
+[current_nav] {
+    font-weight: bold;
+}
+
+
+
+[ion-fixed] {
+    min-height: calc(100%); // adjust to your footer height!
+}
+
+[page_footer] {
+    background: #64676C;
+    color: #ffffff;
+}
+
+[affiliate_links] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+
+
+[social_media_links] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+[sub_footer] {
+    height: 3%;
+    background: #2A6F03 
+}
+
+[header] {
+    --background: #2A6F03
+}
+
+
+[background] {
+    --background: #231F20;
+}
+
+[nav_button] {
+    --color: white;
+   }
+
+[current_nav] {
+    font-weight: bold;
+}
+

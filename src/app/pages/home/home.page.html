@@ -1,25 +1,80 @@
 <ion-header>
 
-  <ion-toolbar>
-    <ion-title>home</ion-title>
+  <ion-toolbar header>
+    <ion-title header_logo>Got Apples!</ion-title>
   </ion-toolbar>
 
-  <ion-toolbar>
+  <ion-toolbar nav>
     <ion-buttons>
-      <ion-button slot="start" [routerLink]="['/', 'home']">Home</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'about']">About</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'growers']">Growers</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'auctions']">Auctions</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'varieties']">Varieties</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'news']">News</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'contact']">Contact</ion-button>
-      <ion-button slot="end" [routerLink]="['/', 'login']">Login</ion-button>
+      <ion-button nav_button expand="full" slot="start" [routerLink]="['/', 'home']" current_nav>Home</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'about']">About</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'growers']">Growers</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'auctions']">Auctions</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'varieties']">Varieties</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'news']">News</ion-button>
+      <ion-button nav_button expand="full" [routerLink]="['/', 'contact']">Contact</ion-button>
+      <ion-button nav_button expand="full" slot="end" [routerLink]="['/', 'login']">Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content>
-  Content comming soon!
+<ion-content backgound>
+  <div ion-fixed>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            1 of 3
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            2 of 3
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            3 of 3
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+
+  </div>
+
+  <div page_footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col affiliate_links size="4">
+          <div>
+            Links
+            <br/>
+            Here
+          </div>
+        </ion-col>
+        <ion-col logo size="4">
+          <div>
+            Logo
+            <br/>
+            Here
+          </div>
+        </ion-col>
+        <ion-col social_media_links  size="4">
+          <div>
+          Social Media
+          <br/>
+          Here
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div sub_footer ></div>
+
 </ion-content>
