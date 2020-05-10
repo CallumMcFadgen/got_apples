@@ -73,10 +73,38 @@
     background: rgba(76, 175, 80, 0.0);
 }
 
+[crumb_style] {
+    cursor: pointer;
+}
+
 [space_style] {
-    background: white;
+    background: e3e4e6;
     padding: 0;
 }
+
+// FORMs ////////////////////////////////////////////////////////
+
+// overall styling for the forms
+[form_style] {
+    background :white;
+    align-items: center;
+    text-align: center;
+}
+
+// // styling for form headers
+// [form_heading_style] {
+//     text-align: center;
+// }
+
+// [button_style] {
+//     align-items: center;
+//     text-align: center;
+// }
+
+
+
+
+
 
 // FOOTER ///////////////////////////////////////////////////////
 

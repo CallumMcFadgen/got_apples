@@ -6,7 +6,7 @@
   <!-- NAVIGATION BAR -->
   <ion-toolbar nav_style>
     <ion-buttons>
-      <ion-button nav_button_style expand="full" slot="start" [routerLink]="['/', 'home']" >Home</ion-button>
+      <ion-button nav_button_style expand="full" slot="start" [routerLink]="['/', 'home']">Home</ion-button>
       <ion-button nav_button_style expand="full" [routerLink]="['/', 'about']">About</ion-button>
       <ion-button nav_button_style expand="full" [routerLink]="['/', 'growers']">Growers</ion-button>
       <ion-button nav_button_style expand="full" [routerLink]="['/', 'auctions']">Auctions</ion-button>
@@ -27,15 +27,17 @@
       <ion-row>
         <ion-col bread_crumbs_style size="12" size-lg="12" size-xl="10" offset-xl="1">
           <div>
-            <span>Login</span>
+            <span crumb_style [routerLink]="['/', 'home']">Home</span>
             &nbsp;
             <span>></span>
+            &nbsp;
+            <span crumb_style [routerLink]="['/', 'login']">Login</span>
           </div>
         </ion-col>
       </ion-row>
 
       <!-- PAGE HEADING -->
-      <ion-row> 
+      <ion-row>
         <ion-col heading_style size="12" size-lg="12" size-xl="10" offset-xl="1">
           <div>
             <img src=".\assets\images\heading_backgrounds\home.png" />
@@ -45,23 +47,57 @@
       </ion-row>
 
       <!-- SPACING -->
-      <ion-row >
+      <ion-row>
         <ion-col space_style size="12" size-lg="12" size-xl="10" offset-xl="1">
           &nbsp;
         </ion-col>
       </ion-row>
 
-
+      <!-- LOGIN FORM -->
+      <ion-row>
+        <ion-col form_style size="12" size-lg="12" size-xl="6" offset-xl="3">
+          <form>
+            <h3 form_heading_style>Enter user login</h3>
+            <ion-item>
+              <ion-label>Username</ion-label>
+              <ion-input type="text" name="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Password</ion-label>
+              <ion-input type="text" name="password"></ion-input>
+            </ion-item>
+            <ion-button button_style [routerLink]="['/', 'dashboard']">Login</ion-button>
+          </form>
+        </ion-col>
+      </ion-row>
 
       <!-- SPACING -->
-      <ion-row >
+      <ion-row>
+        <ion-col space_style size="12" size-lg="12" size-xl="10" offset-xl="1">
+          &nbsp;
+        </ion-col>
+      </ion-row>
+
+      <!-- REGISTER TILE -->
+      <ion-row>
+        <ion-col form_style size="12" size-lg="12" size-xl="6" offset-xl="3">
+          <div>
+            <h3 form_heading_style>Not a member</h3>
+            <p>Engari, ko te whakautu o ona tuakana ki a ia ano, “Kao, he rangatahi noa iho koe. Kaore he wahi mau kei te waka nei, na reira me noho tau ki tatahi ke”.</p>
+            <ion-button button_style [routerLink]="['/', 'register']">Register</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- SPACING -->
+      <ion-row>
         <ion-col space_style size="12" size-lg="12" size-xl="10" offset-xl="1">
           &nbsp;
         </ion-col>
       </ion-row>
 
     </ion-grid>
-  </div> 
+  </div>
 
   <!-- PAGE FOOTER -->
   <div page_footer_style>
@@ -70,22 +106,22 @@
         <ion-col affiliate_link_style size="4">
           <div>
             Links
-            <br/>
+            <br />
             Here
           </div>
         </ion-col>
         <ion-col footer_logo_style size="4">
           <div>
             Logo
-            <br/>
+            <br />
             Here
           </div>
         </ion-col>
         <ion-col social_media_link_style size="4">
           <div>
-          Social Media
-          <br/>
-          Here
+            Social Media
+            <br />
+            Here
           </div>
         </ion-col>
       </ion-row>
