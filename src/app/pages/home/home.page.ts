@@ -10,9 +10,8 @@ export class HomePage implements OnInit {
 
   sliderOpts = {
     autoplay: true,
-    // zoom: {
-    //   maxRatio: 5
-    // }
+    loop: true,
+    speed: 2500
   };
 
   constructor() { }

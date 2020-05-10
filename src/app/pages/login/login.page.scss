@@ -1,0 +1,112 @@
+// HEADER STYLING /////////////////////////////////////////////////
+
+// overall styling for the page header
+[header_style] {
+    --background: #2A6F03;
+}
+
+// styling for the header logo
+[header_logo_style] {
+    font-size: 250%;
+    font-weight: bold;
+    --color: white;
+}
+
+// NAV BAR ///////////////////////////////////////////////////////
+
+// overall styling for the navigation bar
+[nav_style] {
+    --background: #64676C;
+}
+
+// styling for individual nav buttons
+[nav_button_style] {
+    --color: white;
+   }
+
+// highlighting for the current pages button
+[current] {
+    font-weight: bold;
+}
+
+// HEADING //////////////////////////////////////////////////////
+
+// overall heading styling
+[heading_style] {
+    padding: 0;
+}
+
+// page heading text
+[page_heading_txt] {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 3vw;
+    font-weight: 100;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+// CONTENT //////////////////////////////////////////////////////
+
+// overall styling for the content element
+[content_style] {
+    --background: #e3e4e6;
+    --padding: 0;  
+}
+
+[grid_style] {
+    padding: 0;
+}
+
+// using to set page height at the moment, might be an issue? lol
+[ion-fixed] {
+    min-height: calc(90%); // adjust to your footer height!
+}
+
+// overall styling for the navigation breadcrumbs
+[bread_crumbs_style] {
+    background: #e3e4e6;
+    color: black;
+    font-size: x-small;
+    background: rgba(76, 175, 80, 0.0);
+}
+
+[space_style] {
+    background: white;
+    padding: 0;
+}
+
+// FOOTER ///////////////////////////////////////////////////////
+
+// overall styling for page footer
+[page_footer_style] {
+    background: #64676C;
+    color: #ffffff;
+}
+
+// styling for the affilate links in the footer
+[affiliate_link_style] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+// styling for the page footer heading
+[footer_logo_style] {
+    text-align: center;
+}
+
+// styling for the social media links in the footer
+[social_media_link_style] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+// over all styling for the page sub footer
+[sub_footer_style] {
+    height: 3%;
+    background: #2A6F03; 
+}
+
+

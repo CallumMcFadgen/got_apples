@@ -1,85 +1,42 @@
-// HEADER STYLING ///////////////////////////////////////////////////
-[header] {
+// HEADER STYLING /////////////////////////////////////////////////
+
+// overall styling for the page header
+[header_style] {
     --background: #2A6F03;
 }
 
-[header_logo] {
+// styling for the header logo
+[header_logo_style] {
     font-size: 250%;
     font-weight: bold;
     --color: white;
 }
 
-// NAV BAR /////////////////////////////////////////////////////////
-[nav] {
+// NAV BAR ///////////////////////////////////////////////////////
+
+// overall styling for the navigation bar
+[nav_style] {
     --background: #64676C;
 }
 
-[nav_button] {
+// styling for individual nav buttons
+[nav_button_style] {
     --color: white;
    }
 
-[current_nav] {
+// highlighting for the current pages button
+[current] {
     font-weight: bold;
 }
 
-// CONTENT ////////////////////////////////////////////////////////
-[content_styling] {
-    --background: #e3e4e6;  
+// HEADING //////////////////////////////////////////////////////
+
+// overall heading styling
+[heading_style] {
+    padding: 0;
 }
 
-[ion-fixed] {
-    min-height: calc(90%); // adjust to your footer height!
-}
-
-
-
-
-
-
-
-[page_footer] {
-    background: #64676C;
-    color: #ffffff;
-}
-
-[affiliate_links] {
-    text-align: center;
-    border: thin, white, solid;
-}
-
-[footer_logo] {
-    text-align: center;
-}
-
-[social_media_links] {
-    text-align: center;
-    border: thin, white, solid;
-}
-
-[sub_footer] {
-    height: 3%;
-    background: #2A6F03; 
-}
-
-[nav_button] {
-    --color: white;
-   }
-
-[current_nav] {
-    font-weight: bold;
-}
-
-[heading_image] {
-    background: white;
-}
-
-[bread_crumbs_row] {
-    background: #e3e4e6;
-    color: black;
-    font-size: x-small;
-    background: rgba(76, 175, 80, 0.0);
-}
-
+// page heading text
 [page_heading_txt] {
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -90,3 +47,90 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+// CONTENT //////////////////////////////////////////////////////
+
+// overall styling for the content element
+[content_style] {
+    --background: #e3e4e6;
+    --padding: 0;  
+}
+
+[grid_style] {
+    padding: 0;
+}
+
+// using to set page height at the moment, might be an issue? lol
+[ion-fixed] {
+    min-height: calc(90%); // adjust to your footer height!
+}
+
+// overall styling for the navigation breadcrumbs
+[bread_crumbs_style] {
+    background: #e3e4e6;
+    color: black;
+    font-size: x-small;
+    background: rgba(76, 175, 80, 0.0);
+}
+
+[space_style] {
+    background: white;
+    padding: 0;
+}
+
+
+// SLIDER //////////////////////////////////////////////////////
+
+// overall styling for slider
+[slider_style] {
+    background-color: white;
+    padding: 0;
+}
+
+// style for slider
+// [slide_style] {
+
+// }
+
+
+// style for individual slide image in the main slider
+[slide_img_style] {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+// FOOTER ///////////////////////////////////////////////////////
+
+// overall styling for page footer
+[page_footer_style] {
+    background: #64676C;
+    color: #ffffff;
+}
+
+// styling for the affilate links in the footer
+[affiliate_link_style] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+// styling for the page footer heading
+[footer_logo_style] {
+    text-align: center;
+}
+
+// styling for the social media links in the footer
+[social_media_link_style] {
+    text-align: center;
+    border: thin, white, solid;
+}
+
+// over all styling for the page sub footer
+[sub_footer_style] {
+    height: 3%;
+    background: #2A6F03; 
+}
+
+
