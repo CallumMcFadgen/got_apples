@@ -1,6 +1,6 @@
 // HEADER STYLING ///////////////////////////////////////////////////
 [header] {
-    --background: #2A6F03
+    --background: #2A6F03;
 }
 
 [header_logo] {
@@ -11,7 +11,7 @@
 
 // NAV BAR /////////////////////////////////////////////////////////
 [nav] {
-    --background: #64676C
+    --background: #64676C;
 }
 
 [nav_button] {
@@ -22,11 +22,20 @@
     font-weight: bold;
 }
 
-
+// CONTENT ////////////////////////////////////////////////////////
+[background] {
+    --background: #e3e4e6;  
+}
 
 [ion-fixed] {
-    min-height: calc(100%); // adjust to your footer height!
+    min-height: calc(90%); // adjust to your footer height!
 }
+
+
+
+
+
+
 
 [page_footer] {
     background: #64676C;
@@ -47,16 +56,7 @@
 
 [sub_footer] {
     height: 3%;
-    background: #2A6F03 
-}
-
-[header] {
-    --background: #2A6F03
-}
-
-
-[background] {
-    --background: #231F20;
+    background: #2A6F03; 
 }
 
 [nav_button] {
@@ -67,3 +67,14 @@
     font-weight: bold;
 }
 
+[test] {
+    background: white;
+}
+
+[bread_crumbs] {
+    border: thin black solid;
+    background: #e3e4e6;
+    color: black;
+    font-size: x-small;
+    opacity: 0;
+}
