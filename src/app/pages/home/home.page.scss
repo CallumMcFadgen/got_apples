@@ -23,7 +23,7 @@
 }
 
 // CONTENT ////////////////////////////////////////////////////////
-[background] {
+[content_styling] {
     --background: #e3e4e6;  
 }
 
@@ -47,7 +47,9 @@
     border: thin, white, solid;
 }
 
-
+[footer_logo] {
+    text-align: center;
+}
 
 [social_media_links] {
     text-align: center;
@@ -67,14 +69,24 @@
     font-weight: bold;
 }
 
-[test] {
+[heading_image] {
     background: white;
 }
 
-[bread_crumbs] {
-    border: thin black solid;
+[bread_crumbs_row] {
     background: #e3e4e6;
     color: black;
     font-size: x-small;
-    opacity: 0;
+    background: rgba(76, 175, 80, 0.0);
 }
+
+[page_heading_txt] {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 3vw;
+    font-weight: 100;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

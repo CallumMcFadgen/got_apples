@@ -2,6 +2,8 @@
   <ion-toolbar header>
     <ion-title header_logo>Got Apples!</ion-title>
   </ion-toolbar>
+
+  <!-- NAVIGATION BAR -->
   <ion-toolbar nav>
     <ion-buttons>
       <ion-button nav_button expand="full" slot="start" [routerLink]="['/', 'home']" current_nav>Home</ion-button>
@@ -16,25 +18,77 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content background>
+
+<ion-content content_styling [fullscreen]="true">
   <div ion-fixed>
     <ion-grid >
 
-      <ion-row> 
-        <ion-col bread_crumbs size-lg="12" size-xl="8" offset-xl="2">
+      <!-- NAVIGATION BREADCRUMBS -->
+      <ion-row>
+        <ion-col bread_crumbs_row size="12" size-lg="12" size-xl="8" offset-xl="2">
           <div>
-            Home
+            <span>Home</span>
+            &nbsp;
+            <span>></span>
           </div>
         </ion-col>
       </ion-row>
 
+      <!-- PAGE HEADING -->
       <ion-row> 
-        <ion-col test size="12" size-lg="8" offset-lg="2" size-xl="6" offset-xl="3">
+        <ion-col size="12" size-lg="12" size-xl="8" offset-xl="2">
           <div>
-            1 of 3
+            <img src=".\assets\images\heading_backgrounds\home.png" />
+            <h1 page_heading_txt>Welcome to Got Apples!</h1>
           </div>
         </ion-col>
       </ion-row>
+
+      <!-- SPACING -->
+      <ion-row>
+        <ion-col>
+          &nbsp;
+        </ion-col>
+      </ion-row>
+
+
+      <!-- working on this, need to add images and text -->
+      <!-- IMAGE CAROUSEL -->
+      <ion-row>
+        <ion-col  size="12" size-lg="12" size-xl="8" offset-xl="2">
+          <ion-slides [options]="sliderOpts" #slider>
+            <ion-slide>
+              <img src=".\assets\images\home_page_slider\apples_on_ground.jpg" />
+              <h2>Slide 1</h2>
+              <p></p>
+            </ion-slide>
+            <ion-slide>
+              <img />
+              <h2>Slide 2</h2>
+              <p></p>
+            </ion-slide>
+            <ion-slide>
+              <img />
+              <h2>Slide 3</h2>
+              <p></p>
+            </ion-slide>
+            <ion-slide>
+              <img />
+              <h2>Slide 4</h2>
+              <p></p>
+            </ion-slide>
+            <ion-slide>
+              <img />
+              <h2>Slide 5</h2>
+              <p></p>
+            </ion-slide>
+
+          </ion-slides>>
+        </ion-col>
+      </ion-row>
+
+
+
 
 
 
@@ -55,7 +109,7 @@
             Here
           </div>
         </ion-col>
-        <ion-col logo size="4">
+        <ion-col footer_logo size="4">
           <div>
             Logo
             <br/>
