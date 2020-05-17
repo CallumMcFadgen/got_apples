@@ -60,11 +60,6 @@
     padding: 0;
 }
 
-// using to set page height at the moment, might be an issue? lol
-[ion-fixed] {
-    min-height: calc(90%); // adjust to your footer height!
-}
-
 // overall styling for the navigation breadcrumbs
 [bread_crumbs_style] {
     background: #e3e4e6;
