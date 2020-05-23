@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WEB701 Milestone 2 Angular/Ionic Prototype
 
 ### Overview
@@ -20,3 +21,8 @@ Simply fork and clone a copy of this repo to your local device, open the folder 
 ionic serve
 ```
 to start a copy running on a development server, once it has compiled it will automatically open in your local devices default internet browser.
+=======
+# Got Apples!
+
+WEB701 Angular/Ionic build for testing and prototyping
+>>>>>>> dev

@@ -1,25 +1,157 @@
 <ion-header>
-
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar header_style>
+    <ion-title header_logo_style>Got Apples!</ion-title>
   </ion-toolbar>
 
-  <ion-toolbar>
+  <!-- NAVIGATION BAR -->
+  <ion-toolbar nav_style>
     <ion-buttons>
-      <ion-button slot="start" [routerLink]="['/', 'home']">Home</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'about']">About</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'growers']">Growers</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'auctions']">Auctions</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'varieties']">Varieties</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'news']">News</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'contact']">Contact</ion-button>
-      <ion-button slot="end" [routerLink]="['/', 'login']">Login</ion-button>
+      <ion-button nav_button_style expand="full" slot="start" [routerLink]="['/', 'home']">Home</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'about']">About</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'growers']">Growers</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'auctions']">Auctions</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'varieties']">Varieties</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'news']">News</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'contact']">Contact</ion-button>
+      <ion-button nav_button_style expand="full" slot="end" [routerLink]="['/', 'login']">Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
 
 
-<ion-content>
-  Content comming soon!
+<ion-content content_style [fullscreen]="true">
+  <div ion-fixed grid_style>
+    <ion-grid grid_style>
+
+      <!-- NAVIGATION BREADCRUMBS -->
+      <ion-row>
+        <ion-col bread_crumbs_style size="12" size-lg="12" size-xl="10" offset-xl="1">
+          <div>
+            <span crumb_style [routerLink]="['/', 'home']">Home</span>
+            &nbsp;
+            <span>></span>
+            &nbsp;
+            <span crumb_style [routerLink]="['/', 'login']">Login</span>
+            &nbsp;
+            <span>></span>
+            &nbsp;
+            <span crumb_style [routerLink]="['/', 'register']">Register</span>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- PAGE HEADING -->
+      <ion-row>
+        <ion-col heading_style size="12" size-lg="12" size-xl="10" offset-xl="1">
+          <div>
+            <img src=".\assets\images\heading_backgrounds\home.png" />
+            <h1 page_heading_txt>Register</h1>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- SPACING -->
+      <ion-row>
+        <ion-col space_style size="12" size-lg="12" size-xl="10" offset-xl="1">
+          &nbsp;
+        </ion-col>
+      </ion-row>
+
+      <!-- REGISTER FORM -->
+      <ion-row>
+        <ion-col form_style size="12" size-lg="6" offset-lg="3" size-xl="6" offset-xl="3">
+          <form>
+            <h2 form_heading_style>Create your account</h2>
+            <ion-item>
+              <ion-label>First name</ion-label>
+              <ion-input type="text" name="first_name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>last name</ion-label>
+              <ion-input type="text" name="last_name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Username</ion-label>
+              <ion-input type="text" name="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Password</ion-label>
+              <ion-input type="password" name="email_address"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Email address</ion-label>
+              <ion-input type="email" name="email_address"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Phone number</ion-label>
+              <ion-input type="tel" name="phone_number"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Address line 1</ion-label>
+              <ion-input type="text" name="address_line_1"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Address line 2</ion-label>
+              <ion-input type="text" name="address_line_2"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Region</ion-label>
+              <ion-input type="text" name="region"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>City</ion-label>
+              <ion-input type="text" name="city"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>ZIP code</ion-label>
+              <ion-input type="text" name="zip_code"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Request membership privileges</ion-label>
+              <ion-checkbox slot="start"></ion-checkbox>
+            </ion-item>
+            <ion-button button_style [routerLink]="['/', 'dashboard']">Login</ion-button>
+          </form>
+        </ion-col>
+      </ion-row>
+
+      <!-- SPACING -->
+      <ion-row>
+        <ion-col space_style size="12" size-lg="12" size-xl="10" offset-xl="1">
+          &nbsp;
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+
+  <!-- PAGE FOOTER -->
+  <div page_footer_style>
+    <ion-grid>
+      <ion-row>
+        <ion-col affiliate_link_style size="4">
+          <div>
+            Links
+            <br />
+            Here
+          </div>
+        </ion-col>
+        <ion-col footer_logo_style size="4">
+          <div>
+            Logo
+            <br />
+            Here
+          </div>
+        </ion-col>
+        <ion-col social_media_link_style size="4">
+          <div>
+            Social Media
+            <br />
+            Here
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div sub_footer_style></div>
 </ion-content>
