@@ -19,7 +19,27 @@
 
 </ion-header>
 
-
 <ion-content>
-  Content comming soon!
+  <ion-list>
+    <h1>Grower information from API call</h1>
+    <br />
+    <ng-container *ngFor="let detail of data">
+      <br />
+      <ion-label>Username</ion-label>
+      <ion-item>{{ detail.user_name }}</ion-item>
+      <br />
+      <ion-label>First name</ion-label>
+      <ion-item>{{ detail.first_name }}</ion-item>
+      <br />
+      <ion-label>Last name</ion-label>
+      <ion-item>{{ detail.last_name }}</ion-item>
+      <br />
+      <ion-label>Email address</ion-label>
+      <ion-item>{{ detail.email_address }}</ion-item>
+      <br />
+      <ion-label>Phone number</ion-label>
+      <ion-item>{{ detail.phone_number }}</ion-item>
+      <br />
+    </ng-container>
+  </ion-list>
 </ion-content>
