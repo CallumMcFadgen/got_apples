@@ -21,25 +21,22 @@
 
 <ion-content>
   <ion-list>
-    <h1>Grower information from API call</h1>
+    <h1>User information from API GET request</h1>
     <br />
-    <ng-container *ngFor="let detail of data">
-      <br />
-      <ion-label>Username</ion-label>
-      <ion-item>{{ detail.user_name }}</ion-item>
+    <ng-container *ngFor="let user of users">
+      <h3>User : {{ user.user_name }} </h3>
       <br />
       <ion-label>First name</ion-label>
-      <ion-item>{{ detail.first_name }}</ion-item>
+      <ion-item>{{ user.first_name }}</ion-item>
       <br />
       <ion-label>Last name</ion-label>
-      <ion-item>{{ detail.last_name }}</ion-item>
-      <br />
-      <ion-label>Email address</ion-label>
-      <ion-item>{{ detail.email_address }}</ion-item>
+      <ion-item>{{ user.last_name }}</ion-item>
       <br />
       <ion-label>Phone number</ion-label>
-      <ion-item>{{ detail.phone_number }}</ion-item>
+      <ion-item>{{ user.phone_number}}</ion-item>
       <br />
+      <ion-label>Email address</ion-label>
+      <ion-item>{{ user.email_address}}</ion-item>
     </ng-container>
   </ion-list>
 </ion-content>

@@ -12,14 +12,12 @@ import { HttpClient } from '@angular/common/http';
 export class GrowersPage implements OnInit {
 
   loading: any;
-  data ;
+  users: object ;
   error: string;
-  user_name: string;
 
   constructor(private http: HttpClient, public loadingController: LoadingController) {
-    this.data = [];
+    this.users = [];
     this.error = '';
-    this.user_name = 'Kal';
   }
 
   ngOnInit() {
@@ -40,7 +38,7 @@ export class GrowersPage implements OnInit {
       .subscribe(
         data => {
           // Set the data to an array
-          this.data = data;
+          this.users = data;
           console.log(data);
         },
         err => {
@@ -60,7 +58,7 @@ export class GrowersPage implements OnInit {
 
   // API URL
   private getAllUsers(): Observable<object> {
-    const dataUrl = 'http://localhost:3333/get_user/' + this.user_name;
+    const dataUrl = 'http://localhost:3333/get_users';
     console.log(dataUrl);
     return this.http.get(dataUrl);
   }
