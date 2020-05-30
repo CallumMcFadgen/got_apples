@@ -21,9 +21,10 @@
 
 <ion-content>
   <ion-list>
-    <h1>User information from API GET request</h1>
+    <h1>Grower information from API GET request</h1>
     <br />
     <ng-container *ngFor="let user of users">
+      <ion-item-group *ngIf="user.got_apples_member === 1">
       <h3>User : {{ user.user_name }} </h3>
       <br />
       <ion-label>First name</ion-label>
@@ -37,6 +38,7 @@
       <br />
       <ion-label>Email address</ion-label>
       <ion-item>{{ user.email_address}}</ion-item>
+    </ion-item-group>
     </ng-container>
   </ion-list>
 </ion-content>
