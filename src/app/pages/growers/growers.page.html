@@ -1,44 +1,80 @@
 <ion-header>
 
-  <ion-toolbar>
-    <ion-title>growers</ion-title>
+  <!-- LOGO/TITLE -->
+  <ion-toolbar header_style>
+    <ion-title header_logo_style>Got Apples!</ion-title>
   </ion-toolbar>
 
-  <ion-toolbar>
+  <!-- NAVIGATION BAR -->
+  <ion-toolbar nav_style>
     <ion-buttons>
-      <ion-button slot="start" [routerLink]="['/', 'home']">Home</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'about']">About</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'growers']">Growers</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'auctions']">Auctions</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'varieties']">Varieties</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'news']">News</ion-button>
-      <ion-button slot="start" [routerLink]="['/', 'contact']">Contact</ion-button>
-      <ion-button slot="end" [routerLink]="['/', 'login']">Login</ion-button>
+      <ion-button nav_button_style expand="full" slot="start" [routerLink]="['/', 'home']">Home</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'about']">About</ion-button>
+      <ion-button nav_button_style current expand="full" [routerLink]="['/', 'growers']">Growers</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'auctions']">Auctions</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'varieties']">Varieties</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'news']">News</ion-button>
+      <ion-button nav_button_style expand="full" [routerLink]="['/', 'contact']">Contact</ion-button>
+      <ion-button nav_button_style expand="full" slot="end" [routerLink]="['/', 'login']">Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <h1>Grower information from API GET request</h1>
-    <br />
-    <ng-container *ngFor="let user of users">
-      <ion-item-group *ngIf="user.got_apples_member === 1">
-      <h3>User : {{ user.user_name }} </h3>
-      <br />
-      <ion-label>First name</ion-label>
-      <ion-item>{{ user.first_name }}</ion-item>
-      <br />
-      <ion-label>Last name</ion-label>
-      <ion-item>{{ user.last_name }}</ion-item>
-      <br />
-      <ion-label>Phone number</ion-label>
-      <ion-item>{{ user.phone_number}}</ion-item>
-      <br />
-      <ion-label>Email address</ion-label>
-      <ion-item>{{ user.email_address}}</ion-item>
-    </ion-item-group>
-    </ng-container>
-  </ion-list>
+<ion-content content_style [fullscreen]="true">
+  <div ion-fixed grid_style>
+    <ion-grid grid_style>
+
+      <ion-list>
+        <h1>Grower information from API GET request</h1>
+        <br />
+        <ng-container *ngFor="let user of users">
+          <ion-item-group *ngIf="user.got_apples_member === 1">
+            <h3>User : {{ user.user_name }} </h3>
+            <br />
+            <ion-label>First name</ion-label>
+            <ion-item>{{ user.first_name }}</ion-item>
+            <br />
+            <ion-label>Last name</ion-label>
+            <ion-item>{{ user.last_name }}</ion-item>
+            <br />
+            <ion-label>Phone number</ion-label>
+            <ion-item>{{ user.phone_number}}</ion-item>
+            <br />
+            <ion-label>Email address</ion-label>
+            <ion-item>{{ user.email_address}}</ion-item>
+          </ion-item-group>
+        </ng-container>
+      </ion-list>
+    </ion-grid>
+  </div>
+
+  <!-- PAGE FOOTER -->
+  <div page_footer_style>
+    <ion-grid>
+      <ion-row>
+        <ion-col affiliate_link_style size="4">
+          <div>
+            Links
+            <br />
+            Here
+          </div>
+        </ion-col>
+        <ion-col footer_logo_style size="4">
+          <div>
+            Logo
+            <br />
+            Here
+          </div>
+        </ion-col>
+        <ion-col social_media_link_style size="4">
+          <div>
+            Social Media
+            <br />
+            Here
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div sub_footer_style></div>
 </ion-content>
