@@ -1,7 +1,13 @@
-# WEB701 Milestone 2 Angular/Ionic Prototype
+# WEB701 Milestone 2 Angular client prototype
 
 ### Overview
-This prototype is intended to be a testing platform for web application functionality testing in the Angular/Ionic framework
+This prototype is intended to be a testing platform for web application functionality testing in the Angular framework
+
+This client prototype is intended to be used in conjunction with back-end Express server prototype using REST APIs.  This will enable web application functionality testing for the Got Apples! website. 
+
+Click here to view the video walkthrough
+
+<b>Note</b> - This prototype needs the server prototype to be installed and running as it will need to call the APIs in that API service.
 
 ### Current features
 <ul>
@@ -10,8 +16,9 @@ This prototype is intended to be a testing platform for web application function
   <li>Page navigation</li>
   <li>Basic responsiveness</li>
   <li>Basic CSS styling on some pages</li>
-  <li>Forms for login and register</li>
-  <li>Dynamic web content - main page picture carousel</li>  
+  <li>Forms for login, register, account details, etc</li>
+  <li>Dynamic web content - dynamic picture carousel on Home page</li> 
+  <li>Rest API implementation - growers information displayed on Growers page</li>
 </ul>
 
 ### Installation
