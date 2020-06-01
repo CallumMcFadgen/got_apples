@@ -5,7 +5,7 @@ This prototype is intended to be a testing platform for web application function
 
 This client prototype is intended to be used in conjunction with back-end Express server prototype using REST APIs.  This will enable web application functionality testing for the Got Apples! website. 
 
-Click here to view the video walkthrough https://youtu.be/eTvSgFO2XEM
+Click here to view the video walkthrough
 
 <b>Note</b> - This prototype needs the server prototype to be installed and running as it will need to call the APIs in that API service.
 
